@@ -1,11 +1,10 @@
 import './App.css';
-import FormattedCommands from './components/FormattedCommands.js'
+import TerminalBase from './components/TerminalBase.js'
 
 function App() {
   return (
     <div class="p-2">
-      <h1>Not </h1>
-      <FormattedCommands />
+      <TerminalBase />
     </div>
   );
 }

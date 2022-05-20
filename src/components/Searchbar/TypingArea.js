@@ -4,24 +4,22 @@ import Result from './Result.js';
 function TypingArea() {
     const [inputText, setInputText] = useState("");
     let inputHandler = (e) => {
-        //convert input text to lower case
-        var lowerCase = e.target.value.toLowerCase();
+        var lowerCase = e.target.value;
         setInputText(lowerCase);
     };
 
     return (
         <div className="main">
-        <h1>React Search</h1>
-        <div className="search">
-            <input
-            id="outlined-basic"
-            onChange={inputHandler}
-            variant="outlined"
-            fullWidth
-            label="Search"
-            />
-        </div>
-        <Result query={inputText} />
+            <div className="search">
+                <input
+                id="outlined-basic"
+                variant="outlined"
+                onChange={inputHandler}
+                value={inputText}
+                label="Search"
+                />
+            </div>
+            <Result query={inputText} />
         </div>
     );
 }

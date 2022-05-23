@@ -1,9 +1,8 @@
-import './App.css';
 import TerminalBase from './components/TerminalBase.js'
 
 function App() {
   return (
-    <div className="p-2">
+    <div id="body" className="w-100 text-white">
       <TerminalBase />
     </div>
   );

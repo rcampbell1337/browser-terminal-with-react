@@ -1,17 +1,19 @@
 import React from 'react';
-import CommandHandler from '../Commands/CommandHandler';
+import Help from '../Commands/Help/Help';
+import About from '../Commands/About/About';
 
 class Result extends React.Component {
     render() {
         console.log(this.props.query);
         switch(this.props.query) {
             case "help":
-                return (
-                    <CommandHandler />
-                )
+                return <Help />
+            case "about":
+                return <About />
+            
             default:
                 return (
-                    <h1>Please enter a valid command.</h1>
+                    <p></p>
                 )
         }
     }

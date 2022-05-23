@@ -25,7 +25,7 @@ var ascii_art = `
 ⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀⠀⣄⢸⠀⠀⠀⠀⠀⠀
 ⣿⣿⣧⣀⣿………⣀⣰⣏⣘⣆⣀⠀⠀`
         return (
-        <div>
+        <div className='border-bottom'>
             <div className='d-flex'>
                 <div className='m-3'>
                     <pre>

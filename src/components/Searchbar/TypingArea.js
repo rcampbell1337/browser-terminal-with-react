@@ -11,9 +11,8 @@ function TypingArea() {
     return (
         <div className="main">
             <div className="search d-flex">
-                <p className='mt-3 mr-2'><span className='text-success'>rabbo@localhost:3000</span>:<span className='text-info'>home</span>$</p>
+            <p className='mt-3 mr-2'><span className='text-success'>rabbo@localhost:3000</span>:<span className='text-info'>home</span>$></p>
                 <input
-                className='ml-5'
                 id="outlined-basic"
                 autoFocus
                 variant="outlined"
